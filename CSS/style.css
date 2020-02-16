@@ -1,0 +1,10 @@
+aside{
+    background-color: #f5f5dc;
+    width: 30%;
+    display: flex;
+    float: left;
+}
+#wrapper{
+    display: flex;
+    float: left;
+}
