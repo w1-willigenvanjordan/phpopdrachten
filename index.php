@@ -16,9 +16,9 @@
         <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <header>
-            <h1><?php echo "Uitwerking van PHP-opdrachten"; ?></h1>
-        </header>
+        <?php
+            include("includes/header.php")
+        ?>
         <aside>
             <h2>Menu</h2>
             <ul>
@@ -82,5 +82,8 @@
         <main id="wrapper">
             <h2>Uitwerkingen</h2>
         </main>
+        <?php
+            include("includes/footer.php");
+        ?>
     </body>
 </html>
