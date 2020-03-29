@@ -1,3 +1,12 @@
+<?php
+/**
+ * User: Jordan van Willigen
+ * Date: 13-2-2020
+ * Time: 9:01
+ * File: index.php
+ */
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,22 +81,7 @@ include("../includes/header.php")
 </aside>
 <main id="wrapper">
     <h2>Uitwerkingen</h2>
-    <?php
-        $evenement = "Elfstedentocht";
-        $evenementFrs = "Alvestêdetocht";
-        $length = 200;
-        $tocht = "schaatstocht";
-        $ijs = "natuurijs";
-        $text = "Koninklijke Vereniging De Friesche Elf Steden";
-        $locatie = "Leeuwarden";
-        $provincie = "Friesland";
-        $aantal = 15;
-        $jaar = 1909;
-        $hoevaak = 1;
-
-        $verhaal = "de " . $evenement . " (Fries: " . $evenementFrs . ") is een " . $length . " kilometer lange " . $tocht . " over " . $ijs . " die wordt georganiseerd door de " . $text . ". " . $locatie . ", de hoodstad van " . $provincie . ", is start- en aankomstplaats." . $evenement . " is inmiddels " . $aantal . " maal verreden en werd voor het eerst in " . $jaar . " gereden en wordt maximaal " . $hoevaak . " keer per winter gehouden.";
-        echo "<p> $verhaal </p>"
-    ?>
+    <?php include("script.php") ?>
 </main>
 <?php
 include("../includes/footer.php");

@@ -83,8 +83,8 @@
     <h2>Uitwerkingen</h2><br>
     <?php
         //declareren    en    initialiseren van gewenste variablen
-        $trafficLightColor = "Oranje";
-        $ambulanceComing = true;
+        $trafficLightColor = "Groen";
+        $ambulanceComing = false;
 
         //driveOn
         $driveOn = true;
@@ -117,8 +117,8 @@
             echo("<h1 style='color: red;'>U moet stoppen</h1>");
         }
         //deel 2: electric boogaloo
-        $countryName = "Zweden";
-        $currentAge = 21;
+        $countryName = "zweden";
+        $currentAge = 17;
 
         //tonen algemene gegevens
         echo("je woont in " . $countryName . " en je bent " . $currentAge . " jaar oud.");
@@ -136,24 +136,13 @@
         {
             echo "<p>Je mag hier sterke alcohol drinken.</p>";
         }
-        else
-        {
-            echo "<p>Hier mag je geen alcohol drinken.</p>";
-        }
         else if($countryName == "Cyprus" && $currentAge >= 17)
         {
             echo "<p>Je mag hier sterke alcohol drinken.</p>";
         }
-        else
-        {
-            echo "<p>Hier mag je geen alcohol drinken.</p>";
-        }
         else if($countryName == "Nederland" && $currentAge >=18)
         {
             echo "<p>Je mag hier sterke alcohol drinken.</p>";
-        else
-        {
-            echo "<p>Hier mag je geen alcohol drinken.</p>";
         }
         else if($countryName == "Zweden" && $currentAge >=18 && $currentAge <= 20)
         {
@@ -162,6 +151,10 @@
         else if($countryName == "Zweden" && $currentAge >= 20)
         {
             echo "<p>Je mag hier sterke alcohol drinken.</p>";
+        }
+        else
+        {
+            echo "<p>Hier mag je geen alcohol drinken.</p>";
         }
     ?>
 </main>

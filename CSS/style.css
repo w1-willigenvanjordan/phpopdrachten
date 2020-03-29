@@ -5,6 +5,5 @@ aside{
     float: left;
 }
 #wrapper{
-    display: flex;
-    float: left;
+    display: inline-block;
 }
